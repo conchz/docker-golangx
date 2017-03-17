@@ -1,7 +1,7 @@
 FROM golang:1.8
 MAINTAINER Baymax <dolphineor@gmail.com>
 
-RUN apt-get update && apt-get install -y python python-virtualenv python-setuptools supervisor
+RUN apt-get update && apt-get install -y nginx python python-setuptools supervisor
 
 RUN go get github.com/json-iterator/go
 RUN go get github.com/labstack/echo/...
